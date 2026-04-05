@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 app.use(express.json());
 
-const API_KEY = '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';
+const API_KEY = process.env.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;
 
 app.post('/ask', async (req, res) => {
   try {
